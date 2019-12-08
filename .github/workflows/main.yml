@@ -14,7 +14,7 @@ on:
 #    - cron: 0 20 * * *
   push:
     branches: 
-      - master
+      - CI-demo
 
 jobs:
   build:
@@ -22,9 +22,9 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@master
+        uses: actions/checkout@CI-demo
         with:
-          ref: master
+          ref: CI-demo
 
       - name: Initialization environment
         env:
