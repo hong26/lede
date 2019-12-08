@@ -22,7 +22,7 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@CI-demo
+        uses: actions/checkout@master
         with:
           ref: CI-demo
 
